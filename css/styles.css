@@ -276,8 +276,14 @@
     position: relative;
    }
 
+   .form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 
-   .backdrop .data .text_data {
+   }
+
+   .backdrop .data .text-data {
     font-family: var(--principal-text);
     font-weight: 400;   
     font-size: 12px; 
@@ -290,7 +296,7 @@
 
 
 
-   .backdrop .data .input_data {
+   .backdrop .data .input-data {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -299,10 +305,6 @@
   outline: none;
    }
  
-
-   .Abackdrop .data .input_data:focus-within{
-    border: 1px solid var(--brand-color);
-   }
    
    .backdrop .data .input-icon {
     position: relative;
@@ -314,17 +316,17 @@
     fill: currentColor;
    }
 
-   .backdrop .input_data:focus {
+   .backdrop .input-data:focus {
    border: 1px solid var(--brand-color);
    }
-   .backdrop .input_data:focus+.input-icon {
+   .backdrop .input-data:focus+.input-icon {
     fill: var(--brand-color);
    }
 
   
   
 
-.backdrop .data .input_comment {
+.backdrop .data .input-comment {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -337,13 +339,13 @@
   
 }
 
-.backdrop .data .input_comment:focus-within{
+.backdrop .data .input-comment:focus-within{
   border: 1px solid var(--brand-color);
  }
 
 
 
-.backdrop .data .input_comment::placeholder {
+.backdrop .data .input-comment::placeholder {
   font-family: var(--principal-text);
   font-style: normal;
   font-weight: 400;
@@ -353,7 +355,7 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.backdrop .conditions .conditions_text{
+.backdrop .conditions .conditions-text{
   font-family: var(--principal-text);
   font-style: normal;
   font-weight: 400;
@@ -371,7 +373,7 @@
   margin-top: 20px;
 }
 
-.backdrop .send_button {
+.backdrop .send-button {
 width: 200px;
 height: 50px;
 background:var(--brand-color);
