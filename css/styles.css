@@ -66,8 +66,8 @@
      background-color: blueviolet;
      }
 
-     .logo__text {
-      color:var(--brand-color);
+        .logo__text {
+         color:var(--brand-color);
          font-size: 26px;
          line-height: 1.19;
          font-weight: 700;
@@ -79,72 +79,71 @@
       display: flex;
      }
 
-     .nav__pages {
-      color:black;
-      font-size: 14px;
-      line-height: 1.14;
-      font-weight: 500;
-      margin: 30px;
-      position: relative;
-     }
+       .nav__pages {
+       color:black;
+       font-size: 14px;
+       line-height: 1.14;
+       font-weight: 500;
+       margin: 30px;
+       position: relative;
+       }
 
-           .nav__pages:hover {
-           color:var(--brand-color);
-           }
+         .nav__pages:hover {
+          color:var(--brand-color);
+          }
 
+         .nav__pages:hover::after {
+         content: "";
+         position: absolute;
+         top: 265%;
+         left:0%;
+         display: flex;
+         align-items: center;  
+         width: 100%;
+         height: 4px;
+         background: #2196F3;
+         border-radius: 2px;
+         }
 
-        .nav__pages:hover::after {
-  content: "";
-  position: absolute;
-  top: 265%;
-  left:0%;
-  display: flex;
-  align-items: center;  
-  width: 100%;
-  height: 4px;
-  background: #2196F3;
-  border-radius: 2px;
-        }
-
-        .nav__pages:focus {
+         .nav__pages:focus {
             color:var(--brand-color);
-        }
+         }
 
 
 
-     .nav-contacts {
-     display: flex;
-     justify-content: flex-end;
-     margin: 0px;
-     background-color: blueviolet;
-     }
+       .nav-contacts {
+       display: flex;
+       justify-content: flex-end;
+       margin: 0px;
+       background-color: blueviolet;
+       }
      
-     .nav-contacts__text {
-      color:var(--second-brand-text);
-      line-height: 1.14;
-      font-weight: 500;
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      margin-left: 0px;      
-     }
+         .nav-contacts__text {
+         color:var(--second-brand-text);
+         line-height: 1.14;
+         font-weight: 500;
+         display: flex;
+         justify-content: end;
+         align-items: center;
+         margin-left: 0px;      
+         }
      
-     .nav-contacts__icon-envelope {
+         .nav-contacts__icon-envelope {
      color:#757575;
      fill: currentColor;
      width: 26px;
      height: 26px;
      margin-right: 9px;
      margin-left: 28px;
-     }
-     .nav-contacts__icon-envelope:hover {
-       color:var(--brand-color);
-       fill: currentColor;
-       }
-       .nav-contacts__icon-envelope:focus {
-        color:var(--brand-color);
-        fill: currentColor;
-       }
+         }
+         .nav-contacts__icon-envelope:hover {
+          color:var(--brand-color);
+         fill: currentColor;
+         }
+         .nav-contacts__icon-envelope:focus {
+          color:var(--brand-color);
+         fill: currentColor;
+         }
 
        .nav-contacts__text:hover,
        .nav-contacts .nav-contacts__icon-envelope:has(+ .nav-contacts__text:hover) {
@@ -180,7 +179,7 @@
    /* dark-board-modal-window*/
    
    
-.container-dark {
+.backdro {
   width: 100%;
   margin: 0 auto;
   height: 600px;
@@ -191,7 +190,7 @@
   position: relative;
   background-image:url("../images/principal-background.jpg");
  }   
-   .container-dark::before {
+   .backdro::before {
    content: "";
    position: absolute;
    width: 100%;
@@ -199,7 +198,7 @@
    background:var(--found-brand);
    opacity: 50%;
    } 
-   .container-dark .center {
+   .backdro .center {
    display: inline-block;
    position: relative;
    }
@@ -234,7 +233,11 @@
      letter-spacing: 0.06em;
      } 
 
-   .backdrop {
+
+
+
+     
+   .back {
     position: fixed;
     top: 0px;
     right: 0px;
@@ -247,7 +250,7 @@
 
    }
 
-   .backdrop .modal {
+   .back .modal {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -261,7 +264,7 @@
     align-items: center;
    }
 
-   .backdrop .title {
+   .back .title {
     font-family: var(--principal-text);
     font-style: normal;
     font-weight: 700;
@@ -275,7 +278,7 @@
    }
 
 
-   .backdrop .data {
+   .back .data {
     position: relative;
    }
 
@@ -286,7 +289,7 @@
 
    }
 
-   .backdrop .data .text-data {
+   .back .data .text-data {
     font-family: var(--principal-text);
     font-weight: 400;   
     font-size: 12px; 
@@ -299,7 +302,7 @@
 
 
 
-   .backdrop .data .input-data {
+   .back .data .input-data {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -309,7 +312,7 @@
    }
  
    
-   .backdrop .data .input-icon {
+   .back .data .input-icon {
     position: relative;
     width: 14px;
     height: 14px;
@@ -319,17 +322,17 @@
     fill: currentColor;
    }
 
-   .backdrop .input-data:focus {
+   .back .input-data:focus {
    border: 1px solid var(--brand-color);
    }
-   .backdrop .input-data:focus+.input-icon {
+   .back .input-data:focus+.input-icon {
     fill: var(--brand-color);
    }
 
   
   
 
-.backdrop .data .input-comment {
+.back .data .input-comment {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -342,13 +345,13 @@
   
 }
 
-.backdrop .data .input-comment:focus-within{
+.back .data .input-comment:focus-within{
   border: 1px solid var(--brand-color);
  }
 
 
 
-.backdrop .data .input-comment::placeholder {
+.back .data .input-comment::placeholder {
   font-family: var(--principal-text);
   font-style: normal;
   font-weight: 400;
@@ -358,7 +361,7 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.backdrop .conditions .conditions-text{
+.back .conditions .conditions-text{
   font-family: var(--principal-text);
   font-style: normal;
   font-weight: 400;
@@ -370,13 +373,13 @@
   margin-left: 8px;
 }
 
-.backdrop .conditions {
+.back .conditions {
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
 }
 
-.backdrop .send-button {
+.back .send-button {
 width: 200px;
 height: 50px;
 background:var(--brand-color);
