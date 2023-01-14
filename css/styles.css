@@ -240,7 +240,7 @@
    .is-hidden {
     display: none;
    }
-   
+
    .background-modal {
     position: fixed;
     top: 0px;
@@ -438,18 +438,14 @@ color: var(--general-color);
 margin-top: -8px;
  }
 
-   
-
-   
-  
-
   
    /* Paragraph*/
 
    .container-paragraphs {   
    margin:0 auto;
    margin-top: 85px;
-   background-color:var(--general-color);
+   /* background-color:var(--general-color); */
+   background-color: aqua;
    }
      .paragraphs {
      font-size: 14px;
