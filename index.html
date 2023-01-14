@@ -49,70 +49,70 @@
     </header>
 
     <main>
-            <!-- seccion pantalla y modal -->
+            <!-- slogan & registro -->
 
-      <section class="backdro">
-        <div class="center">
-          <h1 class="title">SOLUCIONES EFICACES PARA<br />SU NEGOCIO</h1>
-          <button class="button" type="submit" data-modal-open>
+      <section class="background-picture">
+        <div class="slogan-register">
+          <h1 class="slogan-register__slogan">SOLUCIONES EFICACES PARA<br />SU NEGOCIO</h1>
+          <button class="slogan-register__button" type="submit" data-modal-open>
             Solicite nuestro servicio
           </button>
 
-
+            <!-- ventana modal -->
           
-          <div class="back is-hidden" data-modal>
+          <div class="is-hidden background-modal" data-modal>
 
-            <div class="modal">
-              <button class="button-close" data-modal-close>
-                <svg class="icon-paragrap" width="80" viewBox="0 0 20 13">
+            <div class="form">
+              <button class="form__button-close" data-modal-close>
+                <svg class="form__icon-boton-close" width="80" viewBox="0 0 20 13">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
 
-              <form class="form">
-                <p class="title">Deje sus datos, nos contactaremos con usted</p>
-                <label class="data">
-                  <p class="text-data">Nombre</p>
-                  <input class="input-data" type="text" name="username" />
-                  <svg class="input-icon" viewBox="0 0 20 20">
+              <form>
+                <p class="form__title">Deje sus datos, nos contactaremos con usted</p>
+                <label class="form__label">
+                  <p class="form__text">Nombre</p>
+                  <input class="form__input" type="text" name="username" />
+                  <svg class="form__icon" viewBox="0 0 20 20">
                     <use href="./images/icons.svg#icon-contact"></use>
                   </svg>
                 </label>
 
-                <label class="data">
-                  <p class="text-data">Teléfono</p>
-                  <input class="input-data" type="tel" name="telephone" />
-                  <svg class="input-icon" viewBox="0 0 20 20">
+                <label class="form__label">
+                  <p class="form__text">Teléfono</p>
+                  <input class="form__input" type="tel" name="telephone" />
+                  <svg class="form__icon" viewBox="0 0 20 20">
                     <use href="./images/icons.svg#icon-tel"></use>
                   </svg>
                 </label>
 
-                <label class="data">
-                  <p class="text-data">E-mail</p>
-                  <input class="input-data" type="email" name="email" />
-                  <svg class="input-icon" viewBox="0 0 20 20">
+                <label class="form__label">
+                  <p class="form__text">E-mail</p>
+                  <input class="form__input" type="email" name="email" />
+                  <svg class="form__icon" viewBox="0 0 20 20">
                     <use href="./images/icons.svg#icon-msn"></use>
                   </svg>
                 </label>
 
-                <label class="data">
-                  <p class="text-data">Comentarios</p>
+                <label class="form__label">
+                  <p class="form__text">Comentarios</p>
                   <textarea
-                    class="input-comment"
+                    class="form__input-comments"
                     name="comments"
                     rows="5"
                     placeholder="Introduzca el texto"
                   ></textarea>
                 </label>
 
-                <label class="conditions">
+                <label class="form__checkbox">
                   <input type="checkbox" name="conditions" value="agree" />
-                  <p class="conditions-text">
+                  <p class="form__checkbox-text">
                     Estoy de acuerdo con el boletín informatvo y acepto los<br />Términos
                     y condiciones
                   </p>
                 </label>
-                <button class="send-button" type="submit">Enviar</button>
+                <button class="form__send-button" type="submit">Enviar</button>
               </form>
             </div>
           </div>

@@ -176,10 +176,10 @@
            color: var(--brand-color);
          }
 
-   /* dark-board-modal-window*/
+   /* background picture-slogan-ventana modal*/
    
    
-.backdro {
+.background-picture {
   width: 100%;
   margin: 0 auto;
   height: 600px;
@@ -190,7 +190,7 @@
   position: relative;
   background-image:url("../images/principal-background.jpg");
  }   
-   .backdro::before {
+   .background-picture::before {
    content: "";
    position: absolute;
    width: 100%;
@@ -198,11 +198,13 @@
    background:var(--found-brand);
    opacity: 50%;
    } 
-   .backdro .center {
+
+   .slogan-register {
    display: inline-block;
    position: relative;
+   background-color: aqua;
    }
-     .title {
+     .slogan-register__slogan {
      display: block;
      font-size: 44px;
      line-height: 1.36;
@@ -210,7 +212,7 @@
      color: #FFFFFF;
      text-align: center;
      }
-     .button {
+     .slogan-register__button {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -233,38 +235,79 @@
      letter-spacing: 0.06em;
      } 
 
+   /* ventana modal*/
 
-
-
-     
-   .back {
+   .is-hidden {
+    display: none;
+   }
+   
+   .background-modal {
     position: fixed;
     top: 0px;
     right: 0px;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     width: 100%;
     height: 100%;
     z-index: 3;
     visibility: visible;
     pointer-events: auto;
+    background-color: aqua;
 
    }
 
-   .back .modal {
+   .form {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 10%;
+    align-items: center;
+    top: 14%;
     left: 33%;
     width: 528px;
     height: 581px;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    background-color: blueviolet;
     animation-name: blueOverlay;
     animation-duration: 2s;
-    align-items: center;
+    
    }
 
-   .back .title {
+   .form__button-close{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    font-size: 55px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    right: -47%;
+    overflow: hidden;
+    margin-bottom: -10px;
+    color: #2196F3;
+    fill:currentColor;
+   }
+
+   .form__button-close :hover {
+    color: #2196F3;    
+   }
+
+   .form__icon-boton-close {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background-color:#FFFFFF;
+    color:#212121;
+    fill: currentColor;
+    width: 100%;
+    height: 18px;
+    }
+
+   
+   .form__title {
     font-family: var(--principal-text);
     font-style: normal;
     font-weight: 700;
@@ -273,23 +316,18 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: -5px;
+    margin-bottom: 10px;
     margin-top: 20px;
    }
 
 
-   .back .data {
+   .form__label {
     position: relative;
+    background-color:chocolate;
    }
 
-   .form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 
-   }
-
-   .back .data .text-data {
+   .form__text {
     font-family: var(--principal-text);
     font-weight: 400;   
     font-size: 12px; 
@@ -297,42 +335,42 @@
     letter-spacing: 0.01em;
     color:#757575;
     margin-bottom: 4px;
+    margin-top: -3px;
     outline: none;
    }
 
 
 
-   .back .data .input-data {
-  width: 448px;
+   .form__input {
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  margin-bottom: -1%;
    }
  
    
-   .back .data .input-icon {
+   .form__icon {
     position: relative;
     width: 14px;
     height: 14px;
-    left: -94%;
-    top: 2px;
+    left: 3.5%;
+    top: -23px;
     color: black;
     fill: currentColor;
    }
 
-   .back .input-data:focus {
+   .form__input:focus {
    border: 1px solid var(--brand-color);
    }
-   .back .input-data:focus+.input-icon {
+   .form__input:focus+.form__icon {
     fill: var(--brand-color);
    }
 
-  
-  
-
-.back .data .input-comment {
+   
+  .form__input-comments {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -341,17 +379,16 @@
   padding-right: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
-  outline: none;
-  
+  outline: none;  
 }
 
-.back .data .input-comment:focus-within{
+.form__input-comments:focus-within{
   border: 1px solid var(--brand-color);
  }
 
 
 
-.back .data .input-comment::placeholder {
+.form__input-comments::placeholder {
   font-family: var(--principal-text);
   font-style: normal;
   font-weight: 400;
@@ -361,7 +398,15 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.back .conditions .conditions-text{
+.form__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: burlywood;
+}
+
+.form__checkbox-text {
   font-family: var(--principal-text);
   font-style: normal;
   font-weight: 400;
@@ -373,13 +418,11 @@
   margin-left: 8px;
 }
 
-.back .conditions {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 20px;
-}
 
-.back .send-button {
+
+.form__send-button {
+  position: relative;
+  left: 28%;
 width: 200px;
 height: 50px;
 background:var(--brand-color);
@@ -395,47 +438,11 @@ color: var(--general-color);
 margin-top: -8px;
  }
 
-   .is-hidden {
-    display: none;
+   
 
-   }
-
-   .button-close{
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 30px;
-    height: 30px;
-    font-size: 55px;
-    line-height: 45px;
-    border-radius: 50%;
-    text-align: center;
-    margin-right: 10px;
-    cursor: pointer;
-    position: relative;
-    top: 8px;
-    right: -47%;
-    overflow: hidden;
-    margin-bottom: -10px;
-    color: #2196F3;
-    
-    fill:currentColor;
-   }
-
-   .button-close :hover {
-    color: #2196F3;
-    
-   }
+   
   
-   .icon-paragrap {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    background-color:#FFFFFF;
-    color:#212121;
-    fill: currentColor;
-    width: 100%;
-    height: 18px;
-      }
+
   
    /* Paragraph*/
 
