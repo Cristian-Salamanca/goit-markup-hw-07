@@ -20,18 +20,15 @@
   <body>
     <header>
       <div class="container header">
-        <div class="logo">
-          <a class="logo__text" href="index.html">WebStudio</a>
-        </div>
+        <a class="logo" href="index.html">WebStudio</a>
 
         <div class="nav">
-        <nav>
+          <nav>
             <a class="nav__pages" href="index.html">Estudio</a>
-              <a class="nav__pages" href="portafolio.html">Portafolio</a>
+            <a class="nav__pages" href="portafolio.html">Portafolio</a>
             <a class="nav__pages" href="/Contactos">Contactos</a>
-        </nav>
-      </div>
-
+          </nav>
+        </div>
 
         <div class="nav-contacts">
           <svg class="nav-contacts__icon-envelope" viewBox="0 0 30 14">
@@ -43,34 +40,43 @@
           <svg class="nav-contacts__icon-phone" viewBox="0 0 30 20">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
-          <a class="nav-contacts__text" href="tel:+525555296000">+52 (555) 529-06-00</a>
+          <a class="nav-contacts__text" href="tel:+525555296000"
+            >+52 (555) 529-06-00</a
+          >
         </div>
       </div>
     </header>
 
     <main>
-            <!-- slogan & registro -->
+      <!-- slogan & registro -->
 
       <section class="background-picture">
         <div class="slogan-register">
-          <h1 class="slogan-register__slogan">SOLUCIONES EFICACES PARA<br />SU NEGOCIO</h1>
+          <h1 class="slogan-register__slogan">
+            SOLUCIONES EFICACES PARA<br />SU NEGOCIO
+          </h1>
           <button class="slogan-register__button" type="submit" data-modal-open>
             Solicite nuestro servicio
           </button>
 
-            <!-- ventana modal -->
-          
-          <div class="is-hidden background-modal" data-modal>
+          <!-- ventana modal -->
 
+          <div class="is-hidden background-modal" data-modal>
             <div class="form">
               <button class="form__button-close" data-modal-close>
-                <svg class="form__icon-boton-close" width="80" viewBox="0 0 20 13">
+                <svg
+                  class="form__icon-boton-close"
+                  width="80"
+                  viewBox="0 0 20 13"
+                >
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
 
               <form>
-                <p class="form__title">Deje sus datos, nos contactaremos con usted</p>
+                <p class="form__title">
+                  Deje sus datos, nos contactaremos con usted
+                </p>
                 <label class="form__label">
                   <p class="form__text">Nombre</p>
                   <input class="form__input" type="text" name="username" />
@@ -119,77 +125,76 @@
         </div>
       </section>
 
+      <!-- Paragraphs -->
+
       <section>
-        <div class="container section container-paragraphs">
-          <ul class="paragraphs">
-            <li>
-              <div class="paragraphs-one">
-                <svg class="icon-paragraphs" width="65" viewBox="0 0 30 23">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-                <h3 class="second-text">ATENCION A LOS DETALLES</h3>
-                <p class="third-text">
-                  Nos adelantamos en todos los detalles y procesos de su
-                  negocio, para asi desarrollar una solucion a su medida.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="paragraphs-two">
-                <svg class="icon-paragraphs" width="66" viewBox="0 -2 30 23">
-                  <use href="./images/icons.svg#icon-watch"></use>
-                </svg>
-                <h3 class="second-text">PUNTUALIDAD</h3>
-                <p class="third-text">
-                  Con nosotros, usted puede sentirse<br />
-                  seguro y protegido. Un principio<br />
-                  importante de la empresa:respetar su<br />
-                  tiempo y respetar los plazos acordados.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="paragraphs-three">
-                <svg class="icon-paragraphs" width="66" viewBox="0 0 30 23">
-                  <use href="./images/icons.svg#icon-laptop"></use>
-                </svg>
-                <h3 class="second-text">PLANIFICACION</h3>
-                <p class="third-text">
-                  Usted podrá observar y participar en<br />
-                  cada fase del desarrollo y aplicación <br />
-                  de soluciones.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="paragraphs-four">
-                <svg class="icon-paragraphs" width="66" viewBox="0 0 30 23">
-                  <use href="./images/icons.svg#icon-spaceman"></use>
-                </svg>
-                <h3 class="second-text">TECNOLOGIA MODERNA</h3>
-                <p class="third-text">
-                  Usamos herramientas innovadoras para <br />
-                  resolver las tareas asignadas. Es hora <br />
-                  de simplificar los proceso laborales.
-                </p>
-              </div>
-            </li>
-          </ul>
+        <div class="container section profit-page">
+          <div class="profit-page__paragraph">
+            <svg class="profit-page_icon" width="65" viewBox="0 0 30 23">
+              <use href="./images/icons.svg#icon-antenna"></use>
+            </svg>
+            <h3 class="profit-page__title">ATENCION A LOS DETALLES</h3>
+            <p class="profit-page__text">
+              Nos adelantamos en todos los detalles y procesos de su negocio,
+              para asi desarrollar una solucion a su medida.
+            </p>
+          </div>
+
+          <div class="profit-page__paragraph">
+            <svg class="profit-page_icon" width="66" viewBox="0 -2 30 23">
+              <use href="./images/icons.svg#icon-watch"></use>
+            </svg>
+            <h3 class="profit-page__title">PUNTUALIDAD</h3>
+            <p class="profit-page__text">
+              Con nosotros, usted puede sentirse<br />
+              seguro y protegido. Un principio<br />
+              importante de la empresa:respetar su<br />
+              tiempo y respetar los plazos acordados.
+            </p>
+          </div>
+
+          <div class="profit-page__paragraph">
+            <svg class="profit-page_icon" width="66" viewBox="0 0 30 23">
+              <use href="./images/icons.svg#icon-laptop"></use>
+            </svg>
+            <h3 class="profit-page__title">PLANIFICACION</h3>
+            <p class="profit-page__text">
+              Usted podrá observar y participar en<br />
+              cada fase del desarrollo y aplicación <br />
+              de soluciones.
+            </p>
+          </div>
+
+          <div class="profit-page__paragraph">
+            <svg class="profit-page_icon" width="66" viewBox="0 0 30 23">
+              <use href="./images/icons.svg#icon-spaceman"></use>
+            </svg>
+            <h3 class="profit-page__title">TECNOLOGIA MODERNA</h3>
+            <p class="profit-page__text">
+              Usamos herramientas innovadoras para <br />
+              resolver las tareas asignadas. Es hora <br />
+              de simplificar los proceso laborales.
+            </p>
+          </div>
         </div>
       </section>
 
+      <!-- A que nos dedicamos  -->
+
       <section>
-        <div class="container section container-images">
-          <h2 class="title">A qué nos dedicamos</h2>
-          <div class="image">
-            <div class="image-two">
+        <div class="container section works-page">
+          <h2 class="works-page__title">A qué nos dedicamos</h2>
+          <div class="works-page__images">
+            <div class="works-page__background">
               <a href="">
                 <img src="images/desktop.jpg" alt="writting" width="373" />
               </a>
-              <p class="image-text">APLICACIONES DE ESCRITORIO</p>
+              <p class="works-page__background-text">
+                APLICACIONES DE ESCRITORIO
+              </p>
             </div>
 
-            <div class="image-two">
+            <div class="works-page__background">
               <a href="">
                 <img
                   src="images/social-media.jpg"
@@ -197,26 +202,28 @@
                   width="373"
                 />
               </a>
-              <p class="image-text">APLICACIONES MOVILES</p>
+              <p class="works-page__background-text">APLICACIONES MOVILES</p>
             </div>
 
-            <div class="image-two">
+            <div class="works-page__background">
               <a href="">
                 <img src="images/tablet.jpg" alt="ipad" width="373" />
               </a>
-              <p class="image-text">SOLUCIONES DE DISEÑO</p>
+              <p class="works-page__background-text">SOLUCIONES DE DISEÑO</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="section container-light">
-          <div class="container container-team">
-            <h2 class="titles">Nuestro Equipo</h2>
+      <!-- Team  -->
 
-            <div class="text-team">
-              <div class="card">
+      <section>
+        <div class="section background-team">
+          <div class="container team">
+            <h2 class="team__title">Nuestro Equipo</h2>
+
+            <div class="our-team">
+              <div class="our-team__card">
                 <a href="">
                   <img
                     src="images/andres.jpg"
@@ -224,25 +231,25 @@
                     width="270"
                   />
                 </a>
-                <p class="second-text">Andrés Cubo</p>
-                <p class="third-text">Diseñador de productos</p>
+                <p>Andrés Cubo</p>
+                <p class="our-team__text">Diseñador de productos</p>
                 <div>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="2 0 30 86">
+                  <svg class="socialnetwork-icon" viewBox="2 0 30 86">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="-1 2 30 66">
+                  <svg class="socialnetwork-icon" viewBox="-1 2 30 66">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="our-team__card">
                 <a href="">
                   <img
                     src="images/carla.jpg"
@@ -251,24 +258,24 @@
                   />
                 </a>
                 <p>Carla Palacios</p>
-                <p class="third-text">Desarrolladora Frontend</p>
+                <p class="our-team__text">Desarrolladora Frontend</p>
                 <div>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="2 0 30 86">
+                  <svg class="socialnetwork-icon" viewBox="2 0 30 86">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="-1 2 30 66">
+                  <svg class="socialnetwork-icon" viewBox="-1 2 30 66">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="our-team__card">
                 <a href="">
                   <img
                     src="images/mario.jpg"
@@ -277,40 +284,40 @@
                   />
                 </a>
                 <p>Mario Dorado</p>
-                <p class="third-text">Marketing</p>
+                <p class="our-team__text">Marketing</p>
                 <div>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="2 0 30 86">
+                  <svg class="socialnetwork-icon" viewBox="2 0 30 86">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="-1 2 30 66">
+                  <svg class="socialnetwork-icon" viewBox="-1 2 30 66">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="our-team__card">
                 <a href="">
                   <img src="images/pablo.jpg" alt="Pablo-picture" width="270" />
                 </a>
                 <p>Pablo Mijangos</p>
-                <p class="third-text">Diseñador IU</p>
+                <p class="our-team__text">Diseñador IU</p>
                 <div>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="0 0 30 56">
+                  <svg class="socialnetwork-icon" viewBox="0 0 30 56">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="2 0 30 86">
+                  <svg class="socialnetwork-icon" viewBox="2 0 30 86">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
-                  <svg class="icon-team" viewBox="-1 2 30 66">
+                  <svg class="socialnetwork-icon" viewBox="-1 2 30 66">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </div>
@@ -320,21 +327,23 @@
         </div>
       </section>
 
+      <!-- Customers  -->
+
       <section>
-        <div class="container customers">
-          <h2 class="titles-customer">Clientes Regulares</h2>
+        <div class="section container customers">
+          <h2 class="customers__title">Clientes Regulares</h2>
           <div>
             <svg
-              class="icon-customer icon-company4one"
+              class="customers_icons"
               color="#757575"
               width="66"
-              viewBox="0 0 30 23"
+              viewBox="-10 0 30 23"
             >
               <use href="./images/icons.svg#icon-company4one"></use>
             </svg>
 
             <svg
-              class="icon-customer icon-company4one"
+              class="customers_icons"
               color="#757575"
               width="66"
               viewBox="0 0 30 23"
@@ -343,7 +352,7 @@
             </svg>
 
             <svg
-              class="icon-customer icon-company4one"
+              class="customers_icons"
               color="#757575"
               width="66"
               viewBox="0 0 30 23"
@@ -352,7 +361,7 @@
             </svg>
 
             <svg
-              class="icon-customer icon-company4one"
+              class="customers_icons"
               color="#757575"
               width="66"
               viewBox="0 0 30 23"
@@ -361,7 +370,7 @@
             </svg>
 
             <svg
-              class="icon-customer icon-company4one"
+              class="customers_icons"
               color="#757575"
               width="66"
               viewBox="0 0 30 23"
@@ -370,7 +379,7 @@
             </svg>
 
             <svg
-              class="icon-customer-last icon-company4one"
+              class="customers__icon-last"
               color="#757575"
               width="66"
               viewBox="0 0 30 23"
@@ -383,40 +392,41 @@
     </main>
 
     <!--footer-->
+
     <footer>
-      <div class="container-footer">
-        <div class="container container-general">
+      <div class="background-footer">
+        <div class="container footer">
           <div>
-            <a class="first-text" href="index.html">WebStudio</a>
-            <address class="container-address">
-              <a class="second-text" href=""
+            <a class="logo" href="index.html">WebStudio</a>
+            <address class="address">
+              <a class="address__location" href=""
                 >Calz. Ticoman 500, Ciudad de<br />
                 México, CDMX, México
               </a>
 
-              <a class="third-text" href="mailto:info@exmaple.com"
+              <a class="address__contact" href="mailto:info@exmaple.com"
                 >info@example.com</a
               >
 
-              <a class="third-text" href="tel:+525555296000"
+              <a class="address__contact" href="tel:+525555296000"
                 >+52 (555) 529-06-00</a
               >
             </address>
           </div>
 
-          <div class="social-media-desktop">
-            <p class="text">ENCUENTRENOS EN</p>
+          <div class="social-media">
+            <p class="social-media__text">ENCUENTRENOS EN</p>
             <div>
-              <svg class="icon-footer" viewBox="0 0 30 56">
+              <svg class="socialnetwork-icon socialnetwork-icon--visual" viewBox="0 0 30 56">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
-              <svg class="icon-footer" viewBox="0 0 30 56">
+              <svg class="socialnetwork-icon socialnetwork-icon--visual" viewBox="0 0 30 56">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
-              <svg class="icon-footer" viewBox="2 0 30 86">
+              <svg class="socialnetwork-icon socialnetwork-icon--visual" viewBox="2 0 30 86">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
-              <svg class="icon-footer" viewBox="-1 2 30 66">
+              <svg class="socialnetwork-icon socialnetwork-icon--visual" viewBox="-1 2 30 66">
                 <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </div>
@@ -424,18 +434,18 @@
 
           <div>
             <form class="suscription">
-              <label class="subscription_email">
-                <p class="text">Suscribase al boletín informativo</p>
+              <label class="subscription__email">
+                <p class="subscription__text">Suscribase al boletín informativo</p>
 
                 <input
-                  class="input_subscription"
+                  class="subscription__input"
                   type="email"
                   name="email"
                   placeholder="Correo Electronico"
                 />
               </label>
-              <button class="subscription_button" type="submit">
-                Suscríbase<svg class="button_send">
+              <button class="subscription__button" type="submit">
+                Suscríbase<svg class="subscription__icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
