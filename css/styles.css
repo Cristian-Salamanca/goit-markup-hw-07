@@ -603,7 +603,7 @@ margin-top: -8px;
 
    .customers {
     margin-top: 59px;
-    margin-bottom: 140px;
+    margin-bottom: 0px;
     background-color: aqua;
   }
   
@@ -801,22 +801,19 @@ margin-top: -8px;
 }
 /*BUTTONS-IMAGES*/
   
-.main-container {
-  background-color:var(--general-color);
-  margin-top: 112px;
-  margin:0 auto;
-  margin-bottom: 86px;
-  }
+
+  
    .portafolio-buttons {
-   margin-top: 106px;
-   margin-bottom: 50px;
+
+   margin-bottom: 0px;
    width: 1200px;
    display: flex;
-   background-color:var(--general-color);
-   padding-left: 24%;
+   /* background-color:var(--general-color); */
+   background-color: aqua;
+   padding-left: 27%;
    padding-right: 24%;
    }
-     .portafolio-buttons .buttons {
+     .portafolio-buttons__buttons {
      background: #F5F4FA;
      height: 38px;
      color: black;
@@ -834,7 +831,7 @@ margin-top: -8px;
      cursor: pointer;
      }
 
-       .portafolio-buttons .buttons:hover{
+       .portafolio-buttons__buttons:hover{
         background:var(--brand-color);
         color:#FFFFFF;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -849,23 +846,28 @@ margin-top: -8px;
  gap: 45px;
  width: 1200px;
  margin:0 auto;
- background-color:var(--general-color);
+ /* background-color:var(--general-color); */
  margin-bottom: 0px;
+ background-color: #2196F3;
+ margin-top: 56px;
   }
 
-   .briefcase-card {
+   .briefcase__card {
    display: block;
    width: 370px;
    height: 404px;
-   background-color:#FFFFFF;
+   /* background-color:#FFFFFF; */
+   background-color: blueviolet;
    border: 0.1px solid #F2F2F2;
    position: relative;
    overflow: hidden;
    }
 
+   .briefcase__card:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
-
-   .text-box {
+   .briefcase__overlay {
     font-family: var(--principal-text);
     font-size: 18px;
     line-height: 28px;
@@ -885,7 +887,7 @@ margin-top: -8px;
     background: rgba(33, 150, 243, 0.9);
    }
 
-   .briefcase-card:hover > .text-box {
+   .briefcase__card:hover .briefcase__overlay {
     display: flex;
     animation-name: blueOverlay;
     animation-duration: 250ms;
@@ -902,20 +904,22 @@ margin-top: -8px;
    }
 
 
-     .briefcase-card:hover{
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-      }
-   .briefcase-card .text {
+ 
+   .briefcase__text {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color:var(--general-color);
-    
     padding-top: 25px;
     padding-left: 25px;
     display: block;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color:var(--second-brand-text);
     }
-      .briefcase-card .text .second-text {
+
+      .briefcase__text-title {
        color:black;
        background-color:var(--general-color);
        font-size: 18px;
@@ -924,64 +928,8 @@ margin-top: -8px;
        margin-top: 0px;
        margin-bottom: 20px;
        }
-       .briefcase-card .text .third-text {
-       background-color:var(--general-color);
-       font-size: 16px;
-       line-height: 1;
-       font-weight: 400;
-       color:var(--second-brand-text);
-       }
+
   
-   /*FOOTER-PAGE-TWO*/
-
-  .footer-two {
-   width: 100%;
-   background:var(--found-brand);
-   }   
-      .container-generals { 
-        display: flex;
-        justify-content: space-between;
-        width: 1200px;
-        margin: 0 auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        margin-bottom: 0px;
-      }
-         .container-generals .first-text {
-          color:var(--brand-color);
-          font-size: 26px;
-          line-height: 1.19;
-          font-weight: 700;
-          font-family: var(--second-text);
-
-          }
-       .address {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        font-style: normal;
-        letter-spacing: 0.03em;
-       }
-         .address .second-text {
-          margin-top: 9px;
-          color: #FFFFFF;
-          font-size: 1.14; 
-          font-family: var(--principal-text);
-
-          }
-          .address .third-text {
-            margin-top: 2px;
-            color:var(--second-brand-text);
-            line-height: 1.14;
-            font-weight: 500;
-            font-family: var(--principal-text);
-          }
-           .address .third-text:hover {
-           color:var(--brand-color);
-           } 
-   
- 
-
 
  /*END-PAGE-TWO*/
 
